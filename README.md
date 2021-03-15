@@ -17,7 +17,7 @@ The interview will cover a wide range of technical and social aspects relevant t
 
 ## The Exercises:
 
-### 1. [Frontend] Build a SPA that displays weather information
+### 1. [Frontend] Build a SPA that displays employee data
 The complete specification for this exercise can be found in the [EmployeeData.md](frontend/EmployeeData.md).
 
 ## F.A.Q.
