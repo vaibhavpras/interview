@@ -33,4 +33,4 @@ If you really feel stuck, our first preference is for you to make a decision and
 
 Good luck!
 
-PS: This description was shamelessly copied from the Paidy Interview exercise as it was well written and the team that was built at Paidy reflected the effort put into the hiring process.
+DISCLAIMER: This description was shamelessly copied from the Paidy Interview exercise as it was well written and the quality of the team that was built at Paidy reflected the effort put into the hiring process.
