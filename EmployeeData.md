@@ -6,7 +6,7 @@ The application should have two views which can be toggled through tabs.
   * The first tab should show a bar chart of the dataset where the x axis represents the locations and the y axis represents aaggregated salaries.
 - Table View:
   * The second tab should show a table view of the same data where salaries are aggregated by location. The columns should be
-    (Name, Salary, Delta) where delta shows the percentage change of currSalary from the prevSalary, and the delta value is rendered inside a chip which is
+    (Location, Salary, Delta) where delta shows the percentage change of currSalary from the prevSalary, and the delta value is rendered inside a chip which is
     color coded based on whether the delta was positive or negative(see TableMockup.png)
   * There should be a last row in the table containing the total salaries for all locations.
 
