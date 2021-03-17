@@ -3,11 +3,11 @@
 Build a React Single Page Application displaying an employee dataset in the following format:
 The application should have two views which can be toggled through tabs.
 - Chart View:
-  * The first tab should show a bar chart of the dataset where the x axis represents the locations and the y axis represents aaggregated salaries.
+  * The first tab should show a bar chart of the dataset where the x axis represents the locations and the y axis represents aggregated salaries.
 - Table View:
   * The second tab should show a table view of the same data where salaries are aggregated by location. The columns should be
-    (Location, Salary, Delta) where delta shows the percentage change of currSalary from the prevSalary, and the delta value is rendered inside a chip which is
-    color coded based on whether the delta was positive or negative(see TableMockup.png)
+    (Location, Salary, Delta) where Delta shows the percentage change of currSalary from the prevSalary, and the delta value is rendered inside a chip which is
+    color coded based on whether the delta was positive or negative (see TableMockup.png)
   * There should be a last row in the table containing the total salaries for all locations.
 
 Additionally, we would like you to build filtering capability using checkboxes containing all locations from the dataset. 
