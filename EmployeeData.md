@@ -6,7 +6,8 @@ The application should have two views which can be toggled through tabs.
   * The first tab should show a bar chart of the dataset where the x axis represents the locations and the y axis represents aaggregated salaries.
 - Table View:
   * The second tab should show a table view of the same data where salaries are aggregated by location. The columns should be
-    Name, Salary, Delta, where delta shows the percentage change of currSalary from the prevSalary
+    (Name, Salary, Delta) where delta shows the percentage change of currSalary from the prevSalary, and the delta value is rendered inside a chip which is
+    color coded based on whether the delta was positive or negative(see TableMockup.png)
   * There should be a last row in the table containing the total salaries for all locations.
 
 Additionally, we would like you to build filtering capability using checkboxes containing all locations from the dataset. 
@@ -32,7 +33,7 @@ You could use any library of your choice to build the application. To point you 
 
 - Charting library for the bar chart - https://github.com/reactchartjs/react-chartjs-2, https://github.com/plouc/nivo
 - State Management - You could simply use react props and state, react context api, redux, mobx, or any other setup you are comofortable with.
-- UI Components - Material Ui, Evergreen UI, Ant Design
+- UI Components - For tabs, checkbox, Chip you could use Material Ui, Evergreen UI, Ant Design, etc
 - Styling - We prefer to avoid inline styles in react. Instead you should use a popular css-in-js solution such as 
   https://styled-components.com/, https://emotion.sh/docs/introduction, https://material-ui.com/styles/basics/, bootstrap, tailwindcss, or just stylesheets.
 - Testing - React Testing Library, Jest, Enzyme, etc
