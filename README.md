@@ -1,4 +1,4 @@
-# Panalyt Take-Home Coding Exercises
+# Bizinbiz React Interview Exercise
 
 ## What to expect?
 We understand that your time is valuable, and in anyone's busy schedule solving these exercises may constitute a fairly substantial chunk of time, so we really appreciate any effort you put in to helping us build a solid team.
@@ -6,14 +6,13 @@ We understand that your time is valuable, and in anyone's busy schedule solving 
 ## What we are looking for?
 **Keep it simple**. Read the requirements and restrictions carefully and focus on solving the problem.
 
-**Treat it like production code**. That is, develop your software in the same way that you would for any code that is intended to be deployed to production. These may be toy exercises, but we really would like to get an idea of how you build code on a day-to-day basis.
+**Treat it like production code**. That is, develop your software in the same way that you would for any code that is intended to be deployed to production. These may be toy exercises, but we really would like to get an idea of how you build code on a day-to-day basis. Do not try to overdo things by focussing too much on the design aspect. Keep in mind that you will be evaluated mainly on the basis on functionalities.
 
 ## How to submit?
-You can do this however you see fit - you can email us a tarball, a pointer to download your code from somewhere or just a link to a source control repository. Make sure your submission includes a small **README**, documenting any assumptions, simplifications and/or choices you made, as well as a short description of how to run the code and/or tests. Finally, to help us review your code, please split your commit history in sensible chunks (at least separate the initial provided code from your personal additions).
+You can push the source code to your GitHub profile and provide us a link to see through it. Even better if you can upload it as a Netlify or Heroku (or any other) web app. Make sure your submission includes a small **README**, documenting any assumptions, simplifications and/or choices you made, as well as a short description of how to run the code and/or tests. Finally, to help us review your code, **please** split your commit history in sensible chunks (at least separate the initial provided code from your personal additions).
 
 ## The Interview:
-After you submit your code, we will contact you to discuss and potentially arrange an in-person interview with some of the team.
-The interview will cover a wide range of technical and social aspects relevant to working at Panalyt, but importantly for this exercise: we will also take the opportunity to step through your submitted code with you.
+After you submit your code, we will contact you to discuss and potentially arrange an in-person interview with some of the team. We will also take the opportunity to step through your submitted code with you.
 
 ## The Exercises:
 
@@ -29,8 +28,7 @@ For any value of X, it is up to you, we intentionally leave the problem a little
 
 3) _Something is ambiguous, and I don't know what to do?_
 The first thing is: don't get stuck. We really don't want to trip you up intentionally, we are just attempting to see how you approach problems. That said, there are intentional ambiguities in the specifications, mainly to see how you fill in those gaps, and how you make design choices.
-If you really feel stuck, our first preference is for you to make a decision and document it with your submission - in this case there is really no wrong answer. If you feel it is not possible to do this, just send us an email and we will try to clarify or correct the question for you.
 
 Good luck!
 
-DISCLAIMER: This description was shamelessly copied from the Paidy Interview exercise as it was well written and the quality of the team that was built at Paidy reflected the effort put into the hiring process.
+DISCLAIMER: This exercise was shamelessly copied from the Panalyt Interview exercise as it was well written and the quality of the team that was built at Panalyt reflected the effort put into the hiring process.
