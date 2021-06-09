@@ -1,34 +1,51 @@
-# Bizinbiz React Interview Exercise
+# BizinBiz take-home assignment submission
+Demo can be found at: https://bizinbiz-demo.netlify.app/
 
-## What to expect?
-We understand that your time is valuable, and in anyone's busy schedule solving these exercises may constitute a fairly substantial chunk of time, so we really appreciate any effort you put in to helping us build a solid team.
+## Overview
 
-## What we are looking for?
-**Keep it simple**. Read the requirements and restrictions carefully and focus on solving the problem.
+All required features as well as the bonus ChartView tab are implemented. 
 
-**Treat it like production code**. That is, develop your software in the same way that you would for any code that is intended to be deployed to production. These may be toy exercises, but we really would like to get an idea of how you build code on a day-to-day basis. Do not try to overdo things by focussing too much on the design aspect. Keep in mind that you will be evaluated mainly on the basis on functionalities.
+- TableView displays a list of unique locations and their corresponding **average** salaries that is calculated by averaging all current salaries belonging to that particular location. A total of average salaries currently in the table is displayed in the last row of the table.
+- ChartView displays a bar-chart of locations vs average salaries.
+- All data in both the table and the chart is searchable using location name.
 
-## How to submit?
-You can push the source code to your GitHub profile and provide us a link to see through it. Even better if you can upload it as a Netlify or Heroku (or any other) web app. Make sure your submission includes a small **README**, documenting any assumptions, simplifications and/or choices you made, as well as a short description of how to run the code and/or tests. Finally, to help us review your code, **please** split your commit history in sensible chunks (at least separate the initial provided code from your personal additions).
+## Prerequisites
 
-## The Interview:
-After you submit your code, we will contact you to discuss and potentially arrange an in-person interview with some of the team. We will also take the opportunity to step through your submitted code with you.
+* [Node Package Manager](https://nodejs.org/en/)
+* [Create-React-App](https://github.com/facebook/create-react-app)
+* [TypeScript](https://www.typescriptlang.org/download)
 
-## The Exercises:
+## Installation
 
-### 1. [Frontend] Build a SPA that displays employee data
-The complete specification for this exercise can be found in the [EmployeeData.md].
 
-## F.A.Q.
-1) _Is it OK to share your solutions publicly?_
-Yes, the questions are not prescriptive, the process and discussion around the code is the valuable part. You do the work, you own the code. Given we are asking you to give up your time, it is entirely reasonable for you to keep and use your solution as you see fit.
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/vaibhavpras/interview
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd ./interview/frontend
+   ```
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+   If you face errors related to ```react-tabs ```, try installing it separately
+   ```sh
+   npm install @types/react-tabs
+   ```
+   If the error persists, try using yarn instead.
+   
+1. Serve to your `localhost`: 
+   ```sh
+   npm start
+   ```
 
-2) _Should I do X?_
-For any value of X, it is up to you, we intentionally leave the problem a little open-ended and will leave it up to you to provide us with what you see as important. Just remember to keep it simple. If it's a feature that is going to take you a couple of days, it's not essential.
+## Final Thoughts
 
-3) _Something is ambiguous, and I don't know what to do?_
-The first thing is: don't get stuck. We really don't want to trip you up intentionally, we are just attempting to see how you approach problems. That said, there are intentional ambiguities in the specifications, mainly to see how you fill in those gaps, and how you make design choices.
+This was quite an easy coding assignment. However, I did face a few challenges:
 
-Good luck!
+Firstly, I have never worked with TypeScript before, so I had to begin with learning the fundamentals of TypeScript. It was not hard to grasp the basic concepts of TS since I have previous experience with JavaScript, which TS is a superset of, and statically-typed languages like Java. My code does work fine, but I'm not sure if I have correctly implemented certain TypeScript features like type-declaration for dynamic objects. I do plan on continuing with learning TypeScript since I had planned to pick it up eventually anyway.
 
-DISCLAIMER: This exercise was shamelessly copied from the Panalyt Interview exercise as it was well written and the quality of the team that was built at Panalyt reflected the effort put into the hiring process.
+Secondly, my Linux machine was giving me problems with installing dependencies. So, it took me a while to debug those issues and this assignment ended up taking more time than I expected. And since I have to attend to something important today, I am on a bit of a time crunch and will not be able to implement unit tests. If that is something that will play a large factor in my application's decision, please let me know and I will try implementing it.
+
