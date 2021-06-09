@@ -3,33 +3,36 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
 import TableView from "./TableView";
+import ChartView from "./ChartView";
 import rawData from "../EmployeeDataset.json";
 
 
 
-function MainScreen() {
+function Home() {
 
-  const [dataState, setDatasetState] = useState([{ location: "", avgSalary: null },]);
+  //State of the resultant object obtained after processing rawData
+  const [dataState, setDatasetState] = useState([{ location: "", avgSalary: null },]); 
+  //Controller for search bar
   const [searchState, setSearchState] = useState("");
 
   const calculateAvgSalaryByLocation = (data: any) => {
-    let countData: any = {};
-    let salarySumData: any = {};
+    let countData: any = {}; //the number of times each location occurs in the data set eg: {"USA": 120, "UK": 233.....}
+    let salarySumData: any = {}; //the sum of all salaries grouped by location eg: {"USA": 4500904599, "UK": 2323232328....}
     data.forEach((obj: any) => {
       if (salarySumData[obj.location]) {
         salarySumData[obj.location] += parseInt(
-          obj.currSalary.replace("$", "").replace(",", "")
+          obj.currSalary.replace("$", "").replace(",", "") //remove $ and , from string and parse as int
         );
         countData[obj.location] ? countData[obj.location]++ : (countData[obj.location] = 1);
       } else {
         salarySumData[obj.location] = parseInt(
-          obj.currSalary.replace("$", "").replace(",", "")
+          obj.currSalary.replace("$", "").replace(",", "") 
         );
         countData[obj.location] ? countData[obj.location]++ : (countData[obj.location] = 1);
       }
     });
-
-    let avgSalaryData: any = [];
+    //Array of objects that contains location name andaverage salaries grouped by location eg: [{"location": "USA", "avgCurrSalary": 34550}....]
+    let avgSalaryData: any = []; 
 
     Object.keys(salarySumData).forEach((key) =>
     avgSalaryData.push({
@@ -80,11 +83,11 @@ function MainScreen() {
               />
             </div>
           </div>
-          <h1> Test </h1>
+          <ChartView dataSet={dataState} searchStr={searchState} />
         </TabPanel>
       </Tabs>
     </div>
   );
 }
 
-export default MainScreen;
+export default Home;
