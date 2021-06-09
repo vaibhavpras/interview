@@ -1,9 +1,12 @@
 import React from "react";
 
-function Table({ dataSet }: any) {
+function Table({ dataSet, searchStr }: any) {
   
+  const filteredData = dataSet.filter((e: any) =>
+    e.location.toLowerCase().includes(searchStr.toLowerCase())
+  );
 
-  const rows = dataSet.map((e: any) => {
+  const filteredRows = filteredData.map((e: any) => {
     return (
       <tr>
         <td className="border-t-2 border-gray-200 px-4 py-3 bg-gray-100 text-black">
@@ -16,6 +19,9 @@ function Table({ dataSet }: any) {
     );
   });
 
+  const total = filteredData.reduce((sum: number, item: any) => {
+    return sum + parseInt(item.avgCurrSalary);
+  }, 0);
 
   return (
     <div className="bg-grey-600 h-full w-full flex flex-wrap justify-center content-center text-white">
@@ -31,7 +37,11 @@ function Table({ dataSet }: any) {
           </tr>
         </thead>
         <tbody>
-          {rows}
+          {filteredRows}
+          <tr>
+            <td className="border-t-2 border-gray-200 px-4 py-3 bg-gray-100 text-black font-black">Total</td>
+            <td className="border-t-2 border-gray-200 px-4 py-3 bg-gray-100 text-black font-black">${total.toFixed(2)}</td>
+          </tr>
         </tbody>
       </table>
     </div>
