@@ -63,6 +63,7 @@ function Home() {
           <div className="w-full mb-10 mt-10 flex items-center justify-center">
             <div className="w-11/12 sm:w-1/4">
               <input
+                value={searchState}
                 type="text"
                 className="h-14 w-full pl-10 rounded-lg z-0 border-2 border-gray-300 focus:shadow focus:outline-none"
                 placeholder="Search..."
@@ -76,6 +77,7 @@ function Home() {
           <div className="w-full  mb-10 mt-10 flex items-center justify-center">
             <div className="w-11/12 sm:w-1/4">
               <input
+                value={searchState}
                 type="text"
                 className="h-14 w-full pl-10 rounded-lg z-0 border-2 border-gray-300 focus:shadow focus:outline-none"
                 placeholder="Search..."
